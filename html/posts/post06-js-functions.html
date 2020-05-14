@@ -1,0 +1,71 @@
+
+    <section>
+      <article>
+        <h3>JavaScript Functions</h3>
+        <p>Functions are used for perform a particular task.</p>
+        <p>A function exemple to observe the syntax: </p>
+        <pre>
+          <code class="language-js">
+            function calculateAge(name, birthYear) {
+
+              let date = new Date();
+              let currentYear = date.getFullYear(); 
+              let age = currentYear - birthYear;
+            
+              let display = name + " is " + age + " years old!";
+                        
+              return display; // EXIT here !
+
+            }
+          </code>
+        </pre>
+        <p>Local variables: Variables declared in a function can only be used in the related/parent function.</p>
+        <pre>
+          <code class="language-js">
+            // variable is NOT valid here
+
+          function functionsRock() {
+            let local = "I belong here.";
+            // variable is valid here
+          }
+          
+          // variable is NOT valid here
+          </code>
+        </pre>
+        <p>A function that returns day of the week based on a number</p>
+        <pre>
+          <code class="language-js">
+            function dayOfTheWeek(index) {
+        
+              let days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", 
+              "Saturday", "Sunday"];
+            
+              return days[index];
+            
+            }    
+          </code>
+        </pre>
+        <p>A function which produces a greeting message</p>
+        <pre>
+          <code class="language-js">
+            function sayHello(greeting, input) {
+
+              console.log(greeting + " " + input + " !");
+            
+            }
+            sayHello("Hello", "Bob"); // Returns "Hello Bob !"
+              </code>
+        </pre>
+        <p>How many seconds are there in "minutes" minutes?</p>
+        <pre>
+          <code class="language-js">
+            function minToSec(minutes) {
+
+              console.log(minutes + " minutes = " + (minutes * 60) + " seconds" );
+            
+            }
+            minToSec(60); // Returns "60 minutes = 3600 seconds"
+          </code>
+        </pre>
+      </article>
+    </section>

@@ -1,0 +1,284 @@
+
+    <section>
+      <article>
+        <h3>JS Challenges</h3>
+        <p>JS Functions</p>
+        <p>Create a function who returns the area of a surface in m2. 
+          Return a string like "The area is your number here m2"</p>
+        <pre>
+          <code class="language-js">
+            function surfaceCalc(width, length) {
+
+              let surface = width * length;
+              return "The area is " + surface + " m2.";
+            
+            }
+          </code>
+        </pre>
+        <p>Ceil</p>
+        <pre>
+          <code class="language-js">
+            function surfaceCalcNet(width, length) {
+
+              surfaceNet = Math.ceil(width * length);
+              return "The area is " + surfaceNet + " m2.";
+            
+            }
+          </code>
+        </pre>
+        <p>Floor</p>
+        <pre>
+          <code class="language-js">
+            function surfaceCalcNet2(width, length) {
+
+              surfaceNet = Math.floor(width * length);
+              return "The area is " + surfaceNet + " m2.";
+            
+            }
+          </code>
+        </pre>
+        <p>Return the Remainder from Two Numbers</p>
+        <p>There is a single operator in JavaScript, capable of providing the remainder of a division operation. Two numbers are passed as parameters. The first parameter divided by the second parameter will have a remainder, possibly zero. Return that value.</p>
+        <pre>
+          <code class="language-js">
+            function remainder(x, y) {
+              return x % y;
+            }
+          </code>
+        </pre>
+        <p>Frames Per Second</p>
+        <p>Create a function that returns the number of frames shown in a given number of minutes for a certain FPS. Assume the screen produces 60 frames every second.</p>
+        <pre>
+          <code class="language-js">
+            function frames(minutes, fps) {
+              return minutes * fps * 60;
+            }
+          </code>
+        </pre>
+        <pre>
+          <code class="language-js">
+            function numberOfFrames (input, fps = 60) {
+              let totalFps = input * fps * 60;
+              return totalFps;
+            }
+          </code>
+        </pre>
+        <p>Extract City Facts exercice</p>
+        <p></p>
+        <pre>
+          <code class="language-js">
+            let city = {name: "This city", population: "100", continent: "europe"};
+
+            function cityFacts2(city) {
+            
+            return city.name + " has a population of " + city.population + 
+            " and is situated in " + city.continent;
+            }
+          </code>
+        </pre>
+        <p>Calculate the Profit</p>
+        <p>You work for a manufacturer, and have been asked to calculate the total profit made on the sales of a product. You are given an object containing the cost price per unit (in dollars), sell price per unit (in dollars), and the starting inventory. Return the total profit made, rounded to the nearest dollar. Assume all of the inventory has been sold.</p>
+        <pre>
+          <code class="language-js">
+            function profit(info) {
+              let result = (info.sellPrice - info.costPrice) * info.inventory; 
+              return Math.round(result);
+            }            
+          </code>
+        </pre>
+        <pre>
+          <code class="language-js">
+            function profit2(buy, sell, quantity) {
+              let profit2 = (sell - buy) * quantity;
+              return profit2;
+            }
+          </code>
+        </pre>
+        <pre>
+          <code class="language-js">
+            objectName = {
+              buy: 4,
+              sell: 10,
+              quantity: 10
+            }
+            
+            function profit3(objectName) {
+            
+              let profit3 = (objectName.sell - objectName.buy) * objectName.quantity;
+              return (profit3);
+            }
+          </code>
+        </pre>
+        <p>Is the Number Less than or Equal to Zero?</p>
+        <p>Create a function that takes a number as its only argument and returns true if it's less than or equal to zero, otherwise return false.</p>
+        <pre>
+          <code class="language-js">
+            function lessThanOrEqualToZero(input) {
+              let number = input;
+              if (number <= 0) {
+                return ("TRUE !");
+              }
+              else {
+                return ("FALSE !");
+              } 
+            };
+          </code>
+        </pre>
+        <p>Is the Number Even or Odd?</p>
+        <p>Create a function that takes a number as an argument and returns "even" for even numbers and "odd" for odd numbers.</p>
+        <pre>
+          <code class="language-js">
+            function evenOrOdd (input) {
+              let number2 = input;
+              if (number2 % 2 == 0) {
+                return ("even");
+              }
+              else {
+                return ("odd");
+              };
+            };
+          </code>
+        </pre>
+        <p>Is the Word Singular or Plural?</p>
+        <p>Create a function that takes in a word and determines whether or not it is plural. A plural word is one that ends in "s".</p>
+        <pre>
+          <code class="language-js">
+            function isPlural(input) {
+              let lastLetter = input.substr(-1, 1);
+              if (lastLetter == "s") {
+                return (true);
+              }
+              else {
+                return (false)
+              };
+            };
+          </code>
+        </pre>
+        <p>Using the ternary operator create a condition who checks if today is Tuesday</p>
+        <pre>
+          <code class="language-js">
+            let day = new Date().getDay();
+
+            day == 2 ? "TRUE" : "FALSE";
+
+          </code>
+        </pre>
+        <p>Equality of 3 Values</p>
+        <p>Create a function that takes three integer arguments (a, b, c) and returns the amount of integers which are of equal value.</p>
+        <pre>
+          <code class="language-js">
+            function equal(a, b, c) {
+              if (a == b && b == c) {
+                return 3;
+              }
+              else if ( (a == b && a != c) || (b == c && a != c )  || (a == c && b != c ) ){
+                return 2;
+              }
+              else {
+                return 0;
+              }
+            }
+          </code>
+        </pre>
+        <p>Strictly Increasing or Decreasing</p>
+        <p>Create a function that takes an array and determines whether it's strictly increasing, strictly decreasing, or neither.</p>
+        <pre>
+          <code class="language-js">
+            function check(arr) {
+              if (arr[0] < arr[1] && arr[1] < arr[2]) {
+                return "increasing"
+              }
+              else if (arr[0] > arr[1] && arr[1] > arr[2]) {
+                return "decreasing"
+              }
+              else {
+                return "neither"
+              }
+            }
+          </code>
+        </pre>
+        <p>JS Loops</p>
+        <p>Count genders</p>
+        <p>Create an array containing 6 persons, girls and boys. Each person should have 2 keys, name and gender.
+        Loop into the array and check how many girls and boys do you have. The output should be something like : "My list contains 2 girls and 4 boys"</p>
+        <pre>
+          <code class="language-js">
+            let group = [
+            {
+              name: "Princess",
+              gender: "female"
+            },
+            {
+              name: "Bashful",
+              gender:"male"
+            },
+            {
+              name:"Doc",
+              gender:"male"
+            },
+            {
+              name:"Grumpy",
+              gender:"male"
+            },
+            {
+              name:"Happy",
+              gender:"male"
+            },
+            {
+              name:"Sleepy",
+              gender:"male"
+            }
+          ]
+
+          let amountFemale = 0;
+          let amountMale= 0;
+
+          group.forEach(function(element){
+            if(element.gender === "male"){
+              amountMale++;
+            }else {
+              amountFemale++;
+            }
+          });
+
+          console.log(" My list contains " + amountFemale + " female and " + 
+          amountMale + " male." );
+          </code>
+        </pre>
+        <p>HTML DOM</p>
+        <p>In your HTML page, create an h1 title with any text content
+          Use your "DOM" knowledge to modify the h1 tag (in this order) :
+          <ul>
+            <li>Get the text content</li> 
+            <li>Change text content</li> 
+            <li>Add an id attribute with the value of main-title</li> 
+            <li>Add a class attribute with the value of title</li> 
+            <li>Each time you do something, display it into the console.</li> 
+          </ul>
+        </p>
+        <pre>
+          <code class="language-js">
+            // GETTING TEXT CONTENT
+            const h1 = document.querySelector('h1');
+            console.log(h1.innerHTML);
+
+            // CHANGING TEXT
+            h1.innerHTML = "This is the new content";
+            console.log(h1.innerHTML);
+
+            // ADDING ID AND CLASS
+            h1.setAttribute('id', 'main-title');
+            h1.setAttribute('class', 'title');
+          </code>
+        </pre>
+
+        <!-- <p></p>
+        <p></p>
+        <pre>
+          <code class="language-js">
+
+          </code>
+        </pre> -->
+
+       </article>
+    </section>
