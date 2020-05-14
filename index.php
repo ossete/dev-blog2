@@ -1,10 +1,16 @@
+<?php
+ini_set('display_errors', 1); 
+error_reporting(E_ALL);
+
+$page = isset($_GET['page']) ? $_GET['page'] : 'index'; 
+
+?>
 <!DOCTYPE html>
 
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width <!--show it full screen-->, initial-scale=1.0 <--when page loads zoom ratio will be 1.0-->">
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
@@ -24,7 +30,7 @@
   <div class="page">
   <header>
     <nav class="external">
-      <a class="l-pad" href="index.html">AKIF'S DEV BLOG</a>      
+      <a class="l-pad" href="?page=index">AKIF'S DEV BLOG</a>      
       <a class="l-pad m-l-0-3" href="https://twitter.com/theossete"><i class="icon-twitter1"></i></a>
       <a class="l-pad m-l-0-3" href="https://github.com/ossete"><i class="icon-github1"></i></a>
       <a class="l-pad m-l-0-3" href="https://www.linkedin.com/in/mehmet-akif-s-3b51681a1/"><i class="icon-linkedin1"></i></a>
@@ -32,57 +38,31 @@
       <a class="l-pad m-l-0-3" href="mailto:mehmetakifsakarya@gmail.com"><i class="icon-mail"></i></a>
     </nav>
     <nav class="internal">
-      <a href="index.html">Blog</a>
-      <a href="about.html">About</a>
-      <button id="darkTheme" onclick="darkTheme()">Dark Theme</button>
-      <button id="basicTheme" onclick="basicTheme()">Basic Theme</button>
+      <a href="?page=index">Blog</a>
+      <a href="?page=about">About</a>
+      <!-- <button id="darkTheme" onclick="darkTheme()">Dark Theme</button>
+      <button id="basicTheme" onclick="basicTheme()">Basic Theme</button> -->
+      <a class=menu-link onclick="darkTheme()">Dark Theme</a>
+      <a class=menu-link onclick="basicTheme()">Basic Theme</a>
+      <!-- to change the theme persistently, we should create session and use cookies
+(have to be done with php) -->
     </nav>
     <h1 class="page-title">Akif's Dev Blog</h1>
     <p>Web development basics and code exemples</p>
-    <section class="header-text">
-      <p>PUBLISHED APRIL 2020 BY <a href="https://github.com/ossete">OSSETE</a></p>
-    </section>
   </header>
   <main>
-    <section>
-      <article>
-        <h3 class="art-title">Akif</h3>
-        <h4>Profile</h4>
-        <p>Information Technology Law Master's Degree <br> Information Security, Cyber Crimes, Computer Forensics - Experienced</p>
-        <!-- How to desing list ? -->
-        <ul>Skills
-          <li>Python</li>
-          <li>PHP</li>
-          <li>JavaScript</li>
-          <li>CSS</li>
-          <li>HTML</li>
-        </ul>
-        <br>
-        <ul>Languages
-          <li>Turkish: Native speaker</li>
-          <li>English: B2</li>
-          <li>French: B2</li>
-        </ul>
-        <br>
-        <h4>Contact</h4>
-        <p>My social media links:</p>
-        <section class="contact-holder">
-          <a class="contact" href="https://twitter.com/theossete"><i class="icon-twitter1"></i></a>
-          <a class="contact" href="https://github.com/ossete"><i class="icon-github1"></i></a>
-          <a class="contact" href="https://www.linkedin.com/in/mehmet-akif-s-3b51681a1/"><i class="icon-linkedin1"></i></a>
-          <a class="contact" href="mailto:mehmetakifsakarya@gmail.com"><i class="icon-mail"></i></a>
-        </section>
-      </article>
-    </section>
+  <?php 
+    require_once("html/$page.html"); 
+    ?>  
   </main>
   </div> 
   <footer class="footer">
     <section class="footer-nav">
-      <a class="l-pad" href="index.html">AKIF'S DEV BLOG</a>
+      <a class="l-pad" href="?page=index">AKIF'S DEV BLOG</a>
       <a class="l-pad m-l-0-3" href="#"><i class="icon-keyboard_arrow_up"></i></a>
     </section>
     <section class="footer-text">
-      <p>&copy; 2020 / POWERED BY <a href="https://github.com/ossete">OSSETE</a></p>
+      <p>&copy; 2020 / POWERED BY <a href="https://github.com/ossete">AKIF</a></p>
       <p>GHOSTWRITER THEME BY JOLLYGOODTHEMES / PORTED TO HUGO BY JBUB</p>
     </section>
   </footer>
