@@ -2,7 +2,12 @@
 ini_set('display_errors', 1); 
 error_reporting(E_ALL);
 
+$site_data_json = file_get_contents("site_data.json"); 
+$site_data = json_decode($site_data_json, true); 
+$pages = $site_data['pages'];
+
 $page = isset($_GET['page']) ? $_GET['page'] : 'index'; 
+
 
 ?>
 <!DOCTYPE html>
@@ -47,8 +52,11 @@ $page = isset($_GET['page']) ? $_GET['page'] : 'index';
       <!-- to change the theme persistently, we should create session and use cookies
 (have to be done with php) -->
     </nav>
-    <h1 class="page-title">Akif's Dev Blog</h1>
-    <p>Web development basics and code exemples</p>
+    <h1 class="page-title"><?php echo $pages[$page]['title']?></h1>
+    <p><?php echo $pages[$page]['motto']?></p>
+    <section class="header-text">
+				<p><?php echo $pages[$page]['publish']?></p>
+		</section>
   </header>
   <main>
   <?php 
