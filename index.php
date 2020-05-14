@@ -26,9 +26,11 @@ $page = isset($_GET['page']) ? $_GET['page'] : 'index';
   <meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/plugins/prism/prism.css">
   <link rel="stylesheet" href="assets/icons/icons.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <script defer src="assets/js/scripts.js"></script>
+  <script defer src="assets/plugins/prism/prism.js"></script>
   <title>Akif's Dev Blog</title>
 </head>
 <body class="index">

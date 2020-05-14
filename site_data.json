@@ -13,42 +13,42 @@
     "posts/post01-positioning": {
       "title": "Positioning Exercice",
       "motto": "Positioning: Absolute - Relative",
-      "publish" : "PUBLISHED APRIL 2020 BY <a href='https://github.com/ossete'>OSSETE</a>"
+      "publish" : "PUBLISHED 28 APRIL 2020 BY <a href='https://github.com/ossete'>OSSETE</a>"
     },
     "posts/post02-table-chess": {
       "title": "Table Exercice",
       "motto": "Table Exercice: Chess Board",
-      "publish" : "PUBLISHED APRIL 2020 BY <a href='https://github.com/ossete'>OSSETE</a>"
+      "publish" : "PUBLISHED 29 APRIL 2020 BY <a href='https://github.com/ossete'>OSSETE</a>"
     },
     "posts/post03-pseudo-selectors": {
       "title": "Pseudo Selectors",
       "motto": "CSS: Pseudo Class Selectors",
-      "publish" : "PUBLISHED APRIL 2020 BY <a href='https://github.com/ossete'>OSSETE</a>"
+      "publish" : "PUBLISHED 29 APRIL 2020 BY <a href='https://github.com/ossete'>OSSETE</a>"
     },
     "posts/post04-flex-exercice": {
       "title": "CSS Flex",
       "motto": "CSS Layout: Flex Exercice",
-      "publish" : "PUBLISHED APRIL 2020 BY <a href='https://github.com/ossete'>OSSETE</a>"
+      "publish" : "PUBLISHED 30 APRIL 2020 BY <a href='https://github.com/ossete'>OSSETE</a>"
     },
     "posts/post05-js-arrays": {
       "title": "JavaScript Arrays",
       "motto": "JavaScript Arrays: description and code examples",
-      "publish" : "PUBLISHED APRIL 2020 BY <a href='https://github.com/ossete'>OSSETE</a>"
+      "publish" : "PUBLISHED 30 APRIL 2020 BY <a href='https://github.com/ossete'>OSSETE</a>"
     },
     "posts/post06-js-functions": {
       "title": "JavaScript Functions",
       "motto": "JavaScript Functions: description and code examples",
-      "publish" : "PUBLISHED APRIL 2020 BY <a href='https://github.com/ossete'>OSSETE</a>"
+      "publish" : "PUBLISHED 30 APRIL 2020 BY <a href='https://github.com/ossete'>OSSETE</a>"
     },
     "posts/post07-js-challenges": {
       "title": "JS CHALLENGES",
       "motto": "JS Challenges: Some code examples to understand basics",
-      "publish" : "PUBLISHED MAY 2020 BY <a href='https://github.com/ossete'>OSSETE</a>"
+      "publish" : "PUBLISHED 9 MAY 2020 BY <a href='https://github.com/ossete'>OSSETE</a>"
     },
     "posts/post08-js-objects": {
       "title": "JavaScript Objects",
       "motto": "JavaScript Objects: description and code examples",
-      "publish" : "PUBLISHED MAY 2020 BY <a href='https://github.com/ossete'>OSSETE</a>"
+      "publish" : "PUBLISHED 14 MAY 2020 BY <a href='https://github.com/ossete'>OSSETE</a>"
     }
 
  }
