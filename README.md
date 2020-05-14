@@ -1,7 +1,10 @@
 # dev-blog
-My first project.
-This is my blog.
+My seconde project.
+I turned my blog into a dynamic PHP web page.
 
+
+
+NOTES FOR DEVELOPER:
 TO DO
 - add a hamburger menu
 - put language options to right top
