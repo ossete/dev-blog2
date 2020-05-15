@@ -1,4 +1,4 @@
-# dev-blog
+# dev-blog DYNAMIC
 My second project. <br>
 I turned my blog into a dynamic PHP web page.
 
