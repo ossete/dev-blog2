@@ -30,7 +30,7 @@ $page = isset($_GET['page']) ? $_GET['page'] : 'index';
   <script defer src="assets/plugins/prism/prism.js"></script>
   <title>Akif's Dev Blog</title>
 </head>
-<body class="index menu-is-open">
+<body class="index">
   <div class="page">
   <header>
     <nav id="nav-triggers" class="nav-triggers">
