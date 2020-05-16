@@ -5,7 +5,10 @@ error_reporting(E_ALL);
 $site_data_json = file_get_contents("site_data.json"); 
 $site_data = json_decode($site_data_json, true); 
 $pages = $site_data['pages'];
+
 $page = isset($_GET['page']) ? $_GET['page'] : 'index'; 
+
+
 ?>
 <!DOCTYPE html>
 
@@ -30,19 +33,13 @@ $page = isset($_GET['page']) ? $_GET['page'] : 'index';
   <script defer src="assets/plugins/prism/prism.js"></script>
   <title>Akif's Dev Blog</title>
 </head>
-<body class="index menu-is-open">
+<body class="index">
   <div class="page">
   <header>
-    <nav id="nav-triggers" class="nav-triggers">
-      <a href="#" id="open-menu" class="open-menu trigger">&lt;menu&gt;</a>
-      <a href="#"  id="close-menu" class="close-menu trigger opacity">&lt;/menu&gt;</a>
-    </nav>
-    <nav id="nav-mobile" class="nav-mobile">
-      <a href="?page=index">Blog</a>
-      <a href="?page=about">About</a>
-      <a onclick="darkTheme()">Dark Theme</a>
-      <a onclick="basicTheme()">Basic Theme</a>
-    </nav>
+    <figure id="nav-triggers" class="nav-triggers">
+      <a id="open-menu" class="open-menu trigger">< menu ></a>
+      <a id="close-menu" class="close-menu trigger"></ menu ></a>
+    </figure>
     <nav class="external">
       <a class="l-pad" href="?page=index">AKIF'S DEV BLOG</a>      
       <a class="l-pad m-l-0-3" href="https://twitter.com/theossete"><i class="icon-twitter1"></i></a>
@@ -83,17 +80,6 @@ $page = isset($_GET['page']) ? $_GET['page'] : 'index';
       <p>GHOSTWRITER THEME BY JOLLYGOODTHEMES / PORTED TO HUGO BY JBUB</p>
     </section>
   </footer>
-
-<script>  
-
-
-
-// document.querySelector('#open-menu').addEventListener('click', function() {
-//   alert("I am an alert box!");
-// });
-
-</script>
-
 </body>
 
 </html>
