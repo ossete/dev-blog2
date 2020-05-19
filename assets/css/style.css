@@ -428,7 +428,7 @@ footer,
     width: 100vw;
     height: 100vh;
     /* background-color:rgba(200, 0, 0, 0.7 ); */
-    background-color: rgba(0,0,0,.9);
+    background-color: rgba(0,0,0,0.94);
   }
   .nav-mobile a {
     display: block;
@@ -585,8 +585,61 @@ footer,
 .dark .footer-text a:hover {
   color: #f3ffbd;
 }
-
+.dark #nav-triggers a {
+  color:#00adad;
+  }
 /* COLOR ALTERNATIVES */
 /* 03dac5
 04c9b5
 f3ffbd */
+
+
+/*EXERCICES
+----------------------------------------------------------------------------*/
+.exercice a{
+  font-size: 2em;
+  font-weight: 600;
+  border-bottom: 1px, dotted;
+  text-decoration: underline;
+}
+
+
+/*post01-positioning CSS
+----------------------------------------------------------------------------*/
+.container-exercice > *{
+	margin: 0 auto;
+}
+#div001 {
+	background: red;
+	width: 320px;
+	height: 320px;
+	box-sizing: border-box;
+	position: relative;
+}
+
+#div002{
+	background: white;
+	width: 60px;
+	height: 70px;
+	position: absolute;
+	top: 60px;
+	left: 130px;
+}
+
+#div003{
+	background: white;
+	width: 200px;
+	height: 60px;
+	position: absolute;
+	top: 130px;
+	left: 60px;
+}
+
+#div004{
+	background: white;
+	width: 60px;
+	height: 70px;
+	position: absolute;
+	top: 190px;
+	left: 130px;
+}

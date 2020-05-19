@@ -47,7 +47,7 @@ $page = isset($_GET['page']) ? $_GET['page'] : 'index';
       <a class="l-pad" href="?page=index">AKIF'S DEV BLOG</a>      
       <a class="l-pad m-l-0-3" href="https://twitter.com/theossete"><i class="icon-twitter1"></i></a>
       <a class="l-pad m-l-0-3" href="https://github.com/ossete"><i class="icon-github1"></i></a>
-      <a class="l-pad m-l-0-3" href="https://www.linkedin.com/in/mehmet-akif-s-3b51681a1/"><i class="icon-linkedin1"></i></a>
+      <a class="l-pad m-l-0-3" href="https://www.linkedin.com/in/mehmet-akif-sakarya/"><i class="icon-linkedin1"></i></a>
       <a class="l-pad m-l-0-3" href="https://stackexchange.com/users/18307545/ossete"><i class="icon-stackoverflow1"></i></a>
       <a class="l-pad m-l-0-3" href="mailto:mehmetakifsakarya@gmail.com"><i class="icon-mail"></i></a>
     </nav>
