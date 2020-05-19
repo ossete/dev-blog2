@@ -1,5 +1,4 @@
 QUESTIONS
--How can i fix the footer to end of page
 
 Blog templates
 https://themes.gohugo.io/theme/ghostwriter/

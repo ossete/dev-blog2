@@ -1,5 +1,5 @@
-# dev-blog DYNAMIC
-My second project. <br>
+# dev-blog dynamic
+My first project. <br>
 I turned my blog into a dynamic PHP web page.
 
 
